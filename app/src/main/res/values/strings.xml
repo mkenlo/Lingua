@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Lingua</string>
+    <string name="title_activity_record">RecordActivity</string>
+
+
+    <string-array name="language_array">
+        <item>Yemba</item>
+        <item>Nguiembon</item>
+        <item>Fefe</item>
+    </string-array>
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="medium_spacing">16dp</dimen>
+    <dimen name="small_spacing">8dp</dimen>
+    <dimen name="input_width">256dp</dimen>
+</resources>

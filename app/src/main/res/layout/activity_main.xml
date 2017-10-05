@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:padding="@dimen/medium_spacing"
+    tools:context="com.mkenlo.lingua.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/medium_spacing"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/selectText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginBottom="@dimen/small_spacing"
+        android:layout_alignLeft="@+id/language"
+        android:text="Select your language" />
+
+    <Spinner
+        android:id="@+id/language"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/medium_spacing" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/language"
+        android:layout_alignStart="@id/language"
+        android:layout_alignLeft="@id/language"
+        android:text="Your name" />
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/medium_spacing"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/ageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userName"
+        android:layout_alignStart="@id/userName"
+        android:layout_alignLeft="@id/userName"
+        android:text="Your age" />
+
+    <EditText
+        android:id="@+id/userAge"
+        android:layout_width="@dimen/input_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ageText"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/userAge"
+        android:layout_alignLeft="@+id/userAge"
+        android:layout_alignRight="@+id/userAge"
+        android:layout_alignStart="@+id/userAge"
+        android:layout_below="@+id/userAge"
+        android:layout_marginTop="@dimen/medium_spacing">
+
+    <RadioGroup
+        android:id="@+id/sexRadioButton"
+        android:layout_width="@dimen/input_width"
+        android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Woman" />
+
+            <RadioButton
+                android:id="@+id/Male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Man" />
+    </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:text="Sign in"
+        android:textColor="#fff" />
+
+
+</RelativeLayout>
