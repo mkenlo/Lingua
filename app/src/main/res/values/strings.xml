@@ -3,6 +3,8 @@
     <string name="title_activity_record">RecordActivity</string>
 
 
+    <string name="title_sentence_list">Sentences</string>
+    <string name="title_sentence_detail">Sentence Detail</string>
     <string-array name="language_array">
         <item>Yemba</item>
         <item>Nguiembon</item>
